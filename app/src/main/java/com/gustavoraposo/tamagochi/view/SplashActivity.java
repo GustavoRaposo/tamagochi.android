@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.lifecycle.ViewModelProviders;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.gustavoraposo.tamagochi.R;
@@ -22,5 +23,7 @@ public class SplashActivity extends AppCompatActivity {
         splashViewModel = ViewModelProviders.of(
                 this, new SplashViewModelFactory()
         ).get(SplashViewModel.class);
+
+        startActivity(new Intent(this, LoginActivity.class));
     }
 }
