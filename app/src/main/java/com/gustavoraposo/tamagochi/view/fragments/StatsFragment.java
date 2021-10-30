@@ -3,6 +3,7 @@ package com.gustavoraposo.tamagochi.view.fragments;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,10 +12,11 @@ import android.view.ViewGroup;
 import com.gustavoraposo.tamagochi.R;
 
 public class StatsFragment extends Fragment {
-
-    public StatsFragment() {
-        // Required empty public constructor
+    public static StatsFragment newInstance(){
+        return new StatsFragment();
     }
+
+    private NavController mNavController;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

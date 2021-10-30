@@ -24,6 +24,6 @@ public class SplashActivity extends AppCompatActivity {
                 this, new SplashViewModelFactory()
         ).get(SplashViewModel.class);
 
-        startActivity(new Intent(this, LoginActivity.class));
+        startActivity(new Intent(this, MainActivity.class));
     }
 }
